@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color:#ffeedf ;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:0 20px;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    border-bottom: 2px #145434 solid;
+    color: #145434;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 36px;
+}
+
+#cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    gap: 60px;
+    margin: 80px auto;
+}
+
+.card {
+    color: #ffeedf;
+    background-color: #145434;
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    min-height: 250px;
+    padding: 0 40px;
+}
+
+.card-title {
+    border-bottom: 2px solid #ffeedf;
+    font-size: 36px;
+    min-height: 125px;
+    padding-top: 40px;
+    font-weight: 400;
+}
+
+.card-sub {
+    font-size: 18px;
+    padding-top: 10px;
+    font-weight: 400;
+}
+
+.card-text {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.circle {
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    font-size: 24px;
+    position: absolute;
+    top:-20px;
+    left:-20px;
+    color:#145434;
+    border:1px solid #145434;
+    background-color: #ffeedf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    bottom:-15px;
+    right: -15px;
+    font-size: 14px;
+    font-family: 'Space Grotesk', sans-serif;
+    border:2px solid #145434;
+    background-color: #ffeedf;
+    color: #145434;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 30px;
+}
+
+
+
+button:hover {
+    background-color: #145434;
+    color: #ffeedf;
+    border: 2px solid #ffeedf;
+}
+
+button span {
+    position: absolute;
+    left: 160px;
+}
+
+.material-symbols-outlined {
+    font-size: 36px;
+}
+
+@media (max-width: 435px) {
+    .cards {
+        width : 100%;
+        max-width: 350px;
+    }
+}
